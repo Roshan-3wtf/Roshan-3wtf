@@ -493,6 +493,11 @@ x = setInterval(function() {
 
     init();
   }
+  document.getElementById('revealButton').addEventListener('click', function() {
+    setTimeout(() => {
+        document.getElementById('specialLink').classList.remove('hidden');
+    }, 2000); // 5000ms = 5 seconds
+});
 
   // if (distance < 0) {
   //     clearInterval(x);
